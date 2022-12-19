@@ -1,38 +1,70 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  border: 1px solid black;
+  table-layout: fixed;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th,
+td {
+  border: 1px solid black;
+  word-wrap: break-word;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.cellType {
+  background-color: #e61919;
+  color: #fff;
+}
+
+button {
+  border: 0;
+  border-radius: 0.25rem;
+  background: #1e88e5;
   color: white;
+  font-family: -system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btnStyle {
+  background: #04a814;
+  padding: 1rem 6rem;
+  margin: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leaveBtn {
+  background: #e86f18;
+}
+
+button:disabled {
+  background: #a0a9b1;
+}
+
+.wrapper {
+  width: 50%;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.entry {
+  background: #85e78f;
+}
+
+.exit {
+  background: #e7a475;
+}
+
+.slot {
+  background: rgb(244, 239, 239);
+  margin: 40px auto;
 }
